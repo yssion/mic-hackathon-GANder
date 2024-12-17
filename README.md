@@ -27,10 +27,17 @@ We here therefore investigate ferroelastic-ferroelectric PTO thin films that con
 
 **Results:**
 
+Training outputs of the GAN run on Height channels create falsified Amplitude channels that visually resemble the initial height channels. A particularly ideal example is shown in Fig. 1. Here, the Height Channel
+
+
+
 
 **Conclusions and Outlook:**
 
 We look at ferroelectric-ferroelastic multiferroicity; could we train a similar model to examine, eg. ferromagnetic-ferroelectric multiferroicity?
+
+But it may be good to mention that gan synthesised images can then be used to supplement data for classification/regression models
+
 
 **Methods:**
 
@@ -40,7 +47,7 @@ We look at ferroelectric-ferroelastic multiferroicity; could we train a similar 
 
 *Data Augmentation:*
 
-*Model Training:*
+*Model Training:* Our model was trained on 78 images for 40000 steps, which took approximately 3.5 hrs. The loss continued to decay over the entirety of the training model (Fig. 1).
 
 **References:**
 
