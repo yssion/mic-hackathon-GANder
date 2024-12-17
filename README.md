@@ -8,3 +8,6 @@
 - Create a workflow that trains, tests and refines a CycleGAN to a particular sample.
 - Determine correlations (if any) between sample topography and (piezoresponse force microscopy) amplitude and phase.
 - Determine correlations between sample topography and other independent sample analysis.
+
+**Methods:**
+*Sample and Image Preparation:* PTO (140 nm)/SRO (20 nm)/STO (001) thin films were grown as previously detailed in Ref. [1]. In brief, five samples were grown simultaneously by pulsed laser deposition and bombarded with varying levels of He<sup>+</sup> ions. Piezoresponse force microscopy was then performed in dual AC resonance tracking mode using _OPUS_ OSCM-Pt tips in an _Asylum_ Cypher with a 500 mV drive voltage.
