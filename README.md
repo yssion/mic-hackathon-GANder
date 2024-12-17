@@ -18,7 +18,7 @@ _Michelle Wang (Technical University of Denmark, Denmark)_
 
 **Background and Introduction:**
 
-Ferroelectric materials spontaneously maintain an electric polarisation; ferroelastic materials spontaneously maintain an elastic strain. Many functional materials, such as lead titanate thin films (PbTiO3, PTO) simultaneously exhibit phases that are both ferroelectric and ferroelastic, and this combined ferroicity can be used extensively for transducer applications.
+Ferroelectric materials spontaneously maintain an electric polarisation; ferroelastic materials spontaneously maintain an elastic strain. Many functional materials, such as lead titanate thin films (PbTiO</sub>3</sub>, PTO) simultaneously exhibit phases that are both ferroelectric and ferroelastic, and this combined ferroicity can be used extensively for transducer applications.
 
 Ferroelectric polarisation can be readily observed at the nanoscale through piezoresponse force microscopy (PFM); a variant of atomic-force microscopy (AFM) in which a scanning probe is placed in contact with a sample, an oscillating voltage is applied through the sample, and the consequent (piezoelectric) mechanical oscillations are read. However, the application of a voltage into the sample can cause ferroelectric switching, charge injection, or other chemical changes into the system. Further, the tip being placed in contact with the sample could change or alter the sample surface. Methods that can determine ferroelectric polarisations with neither an external bias, nor tip–sample contact, could therefore be particularly useful for the study of ferroelectric materials.
 
@@ -26,6 +26,11 @@ We here therefore investigate ferroelastic-ferroelectric PTO thin films that con
 
 
 **Results:**
+
+
+**Conclusions and Outlook:**
+
+We look at ferroelectric-ferroelastic multiferroicity; could we train a similar model to examine, eg. ferromagnetic-ferroelectric multiferroicity?
 
 **Methods:**
 
