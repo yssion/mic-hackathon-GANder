@@ -16,7 +16,7 @@ Ferroelectric polarisation can be readily observed at the nanoscale through piez
 Here, we therefore investigate ferroelastic-ferroelectric PTO thin films that contain both c-domains (with an out-of-plane polarisation and out-of-plane tetragonal distortions) and a-domains (with an in-plane polarisation and similarly in-plane tetragonal distortions). As the domains have different polarisation axes and strain axes from one another, both domains appear distinct from each other in both AFM topography datasets and PFM amplitude datasets. We have trained a generative adversarial network (GAN) [1] on both the Height and Amplitude channels of typical PFM measurements to encode such differences in a machine-learning model.
 
 
-## Results:
+## Results
 
 Training outputs of the GAN run on Height channels create falsified Amplitude channels that visually resemble the initial height channels. A particularly ideal example is shown in Fig. 1. Here, the Height Channel
 
@@ -30,13 +30,13 @@ But it may be good to mention that gan synthesised images can then be used to su
 
 ## Methods
 
-**Sample and Image Preparation:** PTO (140 nm)/SRO (20 nm)/STO (001) thin films were grown as previously detailed in Ref. [2]. In brief, five samples were grown simultaneously by pulsed laser deposition and bombarded with varying levels of He<sup>2+</sup> ions. Piezoresponse force microscopy was then performed in dual AC resonance tracking mode using _OPUS_ OSCM-Pt tips in an _Asylum Research_ Cypher with a 500 mV drive voltage. Images varied in scale from approximately 2 μm to 10 μm.
+***Sample and Image Preparation:*** PTO (140 nm)/SRO (20 nm)/STO (001) thin films were grown as previously detailed in Ref. [2]. In brief, five samples were grown simultaneously by pulsed laser deposition and bombarded with varying levels of He<sup>2+</sup> ions. Piezoresponse force microscopy was then performed in dual AC resonance tracking mode using _OPUS_ OSCM-Pt tips in an _Asylum Research_ Cypher with a 500 mV drive voltage. Images varied in scale from approximately 2 μm to 10 μm.
 
-**Preliminary Data Processing:** `HeightRetrace` and `Amplitude2Retrace` channels were directly taken from the `.ibw` output files from the _Asylum Research_ software. These datasets were directly converted to grayscale `.jpg` files using the `gray` sequential colormap in the `matplotlib` Python package, and no further data processing, with the minimum height (amplitude) and maximum height (amplitude) set to black and white respectively. These `.jpg` files were then both rescaled to 256x256 pixels, and paired height and amplitude images were combined together to create a single 512x256 pixel image. These composited images were used for model training.
+***Preliminary Data Processing:*** `HeightRetrace` and `Amplitude2Retrace` channels were directly taken from the `.ibw` output files from the _Asylum Research_ software. These datasets were directly converted to grayscale `.jpg` files using the `gray` sequential colormap in the `matplotlib` Python package, and no further data processing, with the minimum height (amplitude) and maximum height (amplitude) set to black and white respectively. These `.jpg` files were then both rescaled to 256x256 pixels, and paired height and amplitude images were combined together to create a single 512x256 pixel image. These composited images were used for model training.
 
-**Data Augmentation:**
+***Data Augmentation:***
 
-**Model Training:** Our model was trained on 78 images for 40000 steps, which took approximately 3.5 hrs. The loss continued to decay over the entirety of the training model (Fig. 1).
+***Model Training:*** Our model was trained on 78 images for 40000 steps, which took approximately 3.5 hrs. The loss continued to decay over the entirety of the training model (Fig. 1).
 
 ## References
 
