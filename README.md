@@ -6,7 +6,6 @@ _Kieran Pang (Justus-Liebig-Universität Gießen, Germany)_
 
 _Michelle Wang (Technical University of Denmark, Denmark)_
 
-
 ## Background and Introduction
 
 Ferroelectric materials spontaneously maintain an electric polarisation; ferroelastic materials spontaneously maintain an elastic strain. Many functional materials, such as lead titanate thin films (PbTiO</sub>3</sub>, PTO), simultaneously exhibit phases that are both ferroelectric and ferroelastic, and this combined ferroicity can be used extensively for transducer applications.
@@ -14,6 +13,18 @@ Ferroelectric materials spontaneously maintain an electric polarisation; ferroel
 Ferroelectric polarisation can be readily observed at the nanoscale through piezoresponse force microscopy (PFM)—a variant of atomic-force microscopy (AFM) in which a scanning probe is placed in contact with a sample, an oscillating voltage is applied through the sample, and the consequent (piezoelectric) mechanical oscillations are read. However, the application of a voltage into the sample can cause ferroelectric switching, charge injection, or other chemical changes in the system. Further, the tip being placed in contact with the sample could change or alter the sample surface. Methods that can determine ferroelectric polarisations with neither an external bias, nor tip–sample contact, could therefore be particularly useful for the study of ferroelectric materials.
 
 Here, we therefore investigate ferroelastic–ferroelectric PTO thin films that contain both c-domains (with an out-of-plane polarisation and out-of-plane tetragonal distortions) and a-domains (with an in-plane polarisation and similarly in-plane tetragonal distortions). As the domains have different polarisation axes and strain axes from one another, both domains appear distinct from each other in both AFM topography datasets and PFM amplitude datasets. We have trained a generative adversarial network (GAN) based on `pix2pix` [1] on both the Height and Amplitude channels of typical PFM measurements to encode such differences in a machine-learning model.
+
+## Code
+
+Run notebooks in the following order to train a new model:
+
+1. `createCompositeImageFromIBW.ipynb`: Converts all DART PFM `.ibw` files in current directory, and all sub-directories, into `.jpg` files in a new subfolder named `Raw_Data`. Then composes Height and Amplitude channels into a single `.jpg`. A single `.ibw` is currently supplied; please contact Ralph Bulanadi if more files are requested.
+2. `dataset_augmentation.ipynb`: Augments `.jpg` data by rotation and cropping.
+3. `TrainingOnAugmented`: Creates and trains a new model.
+
+To test the current model:
+
+1. `TestingOnAugmented`: Runs model on dataset.
 
 ## Results
 
