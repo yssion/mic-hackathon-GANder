@@ -16,7 +16,7 @@ Here, we therefore investigate ferroelastic–ferroelectric PTO thin films that 
 
 ## Model
 
-Our trained model can be found [here](https://knox.unige.ch:5000/d/s/11NadvozcMdZJEI5DxR7YVqBOOjqIrxA/lvRxhtMzlx6EWC2NeLkffDAeN22pO1uS-I7gguFYv6As)
+Our trained model can be found [here](https://knox.unige.ch:5000/d/s/11NadvozcMdZJEI5DxR7YVqBOOjqIrxA/lvRxhtMzlx6EWC2NeLkffDAeN22pO1uS-I7gguFYv6As).
 
 ## Code
 
