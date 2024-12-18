@@ -2,7 +2,7 @@
 
 _Ralph Bulanadi (University of Geneva, Switzerland)_
 
-_Kieran Pang (Justus-Liebig-Universität Gießen, Germany)_
+_Kieran J Pang (Justus-Liebig-Universität Gießen, Germany)_
 
 _Michelle Wang (Technical University of Denmark, Denmark)_
 
@@ -53,7 +53,7 @@ The present work shows some promise in extracting ferroelectric–ferroelastic c
 
 ***Preliminary Data Processing:*** `HeightRetrace` and `Amplitude2Retrace` channels were directly taken from the `.ibw` output files from the _Asylum Research_ software. These datasets were directly converted to grayscale `.jpg` files using the `gray` sequential colormap in the `matplotlib` Python package, and no further data processing, with the minimum height (amplitude) and maximum height (amplitude) set to black and white respectively. These `.jpg` files were then both rescaled to 256x256 pixels, and paired height and amplitude images were combined together to create a single 512x256 pixel image. These composited images were used for model training.
 
-***Data Augmentation:*** Our initial 78 PFM images were quadrupled by rotation (± 20°, randomly sampled from a uniform distribution). Random cropping and jitter were further applied.
+***Data Augmentation:*** Our initial 78 PFM images were quadrupled by rotation (± 20°, randomly sampled from a uniform distribution). Random cropping and jitter were further applied, and half of the image set was mirrored horizontally.
 
 ***Model Training:*** Training was performed on our augmented image dataset for 40000 steps, which took approximately 3.5 hrs. The loss continued to decay over the entirety of the training model (Fig. 3).
 
