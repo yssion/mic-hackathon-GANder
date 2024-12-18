@@ -58,7 +58,7 @@ The present work shows some promise in extracting ferroelectric–ferroelastic c
 ***Model Training:*** Training was performed on our augmented image dataset for 40000 steps, which took approximately 3.5 hrs. The loss continued to decay over the entirety of the training model (Fig. 3).
 
 ![Fig. 3](sample_images/Losses.png)
-<p align="center">Fig. 3: L1 and total losses (blue) and their running average (red) of the training model.</p>
+<p align="center">Fig. 3: Total and L1 losses (blue) and their running average (red) of the training model.</p>
 
 ## References
 
