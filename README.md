@@ -30,11 +30,11 @@ To test the current model:
 
 Training outputs of the GAN run on Height channels create falsified Amplitude channels that visually resemble the initial height channels. A particularly ideal example is shown in Fig. 1. Here, the Height Channel (Input Image) shows some orthogonal striations that are attributed to _a_-domains. In the Amplitude Channel (Ground Truth), we observe orthogonal lines we attribute physically to small regions of ferroelastic–ferroelectric _a_-domains compared to the surround _c_-domains. We also observe curved regions of reversed out-of-plane _c_-axis-oriented polarisation (which maintain the same ferroelastic strain as other _c_-domain regions. In the Simulated Amplitude Channel (Predicted Image), we observe the orthogonal lines that we attribute to the ferroelastic–ferroelectric _a_-domains, but _not_ the purely ferroelectric reversed _c_-domains. This suggests that our model is indeed fully capable of measuring such ferroelastic–ferroelectric correlations.
 
-[Fig. 1]
+![Fig. 1](sample_images/test40.png)
 
 A less ideal example is shown in Fig. 2. Once more, the Height Channel (Input Image) shows some orthogonal striations that are attributed to _a_-domains, while the Amplitude Channel (Ground Truth), shows both ferroelastic-ferroelectric _a_-domains and reversed out-of-plane _c_-axis-oriented polarisations. In the Simulated Amplitude Channel (Predicted Image), however, we see both _a_-domains _and_ _c_-domain reversal. This could suggest that the model is currently overfitted; many of the training datasets image similar regions as the test datasets, and so the model may attempt to match the test datasets too strongly to a dataset used for training. This could produce the reversed _c_-domains, even if there is no physical indication of such in the Height Channel. A larger training dataset with independent images could be used to mitigate these effects.
 
-[Fig. 2]
+![Fig. 2](sample_images/test72.png)
 
 ## Conclusions, Outlook, and Future Work
 
