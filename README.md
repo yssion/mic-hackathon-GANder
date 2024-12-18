@@ -14,6 +14,10 @@ Ferroelectric polarisation can be readily observed at the nanoscale through piez
 
 Here, we therefore investigate ferroelastic–ferroelectric PTO thin films that contain both c-domains (with an out-of-plane polarisation and out-of-plane tetragonal distortions) and a-domains (with an in-plane polarisation and similarly in-plane tetragonal distortions). As the domains have different polarisation axes and strain axes from one another, both domains appear distinct from each other in both AFM topography datasets and PFM amplitude datasets. We have trained a generative adversarial network (GAN) based on `pix2pix` [1] on both the Height and Amplitude channels of typical PFM measurements to encode such differences in a machine-learning model.
 
+## Model
+
+Our trained model can be found [here]([https://www.genome.gov/](https://knox.unige.ch:5000/d/s/11NadvozcMdZJEI5DxR7YVqBOOjqIrxA/lvRxhtMzlx6EWC2NeLkffDAeN22pO1uS-I7gguFYv6As)
+
 ## Code
 
 Run notebooks in the following order to train a new model:
